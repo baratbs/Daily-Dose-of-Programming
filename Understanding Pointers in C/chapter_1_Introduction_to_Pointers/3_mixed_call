@@ -1,0 +1,31 @@
+#include<stdio.h>
+void areaperi(int radius,float *area,float *perimeter);
+#define print(x) printf("%f\n",x);
+
+int main(){
+int radius;
+float area,perimeter;
+
+printf("\nEnter radius of the circle:");
+scanf("%d",&radius);
+
+areaperi(radius,&area,&perimeter);
+print(area);
+print(perimeter);
+}
+
+void areaperi(int radius,float *area,float *perimeter){
+
+*area=3.14*radius*radius;
+*perimeter=2*3.14*radius;
+}
+
+/*OUTPUT
+Enter radius of the circle:5
+78.500000
+31.400000
+*/
+
+
+
+
